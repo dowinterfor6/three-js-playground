@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/three-js-playground/static/css/main.c64e2fba.chunk.css",
+    "main.js": "/three-js-playground/static/js/main.d64c0bc3.chunk.js",
+    "main.js.map": "/three-js-playground/static/js/main.d64c0bc3.chunk.js.map",
+    "runtime-main.js": "/three-js-playground/static/js/runtime-main.96c4d609.js",
+    "runtime-main.js.map": "/three-js-playground/static/js/runtime-main.96c4d609.js.map",
+    "static/js/2.4222d819.chunk.js": "/three-js-playground/static/js/2.4222d819.chunk.js",
+    "static/js/2.4222d819.chunk.js.map": "/three-js-playground/static/js/2.4222d819.chunk.js.map",
+    "index.html": "/three-js-playground/index.html",
+    "static/css/main.c64e2fba.chunk.css.map": "/three-js-playground/static/css/main.c64e2fba.chunk.css.map",
+    "static/js/2.4222d819.chunk.js.LICENSE.txt": "/three-js-playground/static/js/2.4222d819.chunk.js.LICENSE.txt",
+    "static/media/corona_bk.97e76adb.png": "/three-js-playground/static/media/corona_bk.97e76adb.png",
+    "static/media/corona_dn.47349e0d.png": "/three-js-playground/static/media/corona_dn.47349e0d.png",
+    "static/media/corona_ft.7254c08d.png": "/three-js-playground/static/media/corona_ft.7254c08d.png",
+    "static/media/corona_lf.b29e8c04.png": "/three-js-playground/static/media/corona_lf.b29e8c04.png",
+    "static/media/corona_rt.287e832e.png": "/three-js-playground/static/media/corona_rt.287e832e.png",
+    "static/media/corona_up.782ec698.png": "/three-js-playground/static/media/corona_up.782ec698.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.96c4d609.js",
+    "static/js/2.4222d819.chunk.js",
+    "static/css/main.c64e2fba.chunk.css",
+    "static/js/main.d64c0bc3.chunk.js"
+  ]
+}
