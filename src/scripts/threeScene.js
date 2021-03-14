@@ -1,6 +1,12 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import Stats from "stats.js";
+import bk from "../images/corona_bk.png";
+import dn from "../images/corona_dn.png";
+import ft from "../images/corona_ft.png";
+import lf from "../images/corona_lf.png";
+import rt from "../images/corona_rt.png";
+import up from "../images/corona_up.png";
 
 // Needs a better name tbh
 class ThreeScene {
@@ -22,7 +28,7 @@ class ThreeScene {
       75,
       window.innerWidth / window.innerHeight,
       0.1,
-      1000
+      100000 // TODO: Calculate what's needed for skybox
     );
     this.camera.position.set(25, 25, 25);
     this.camera.lookAt(0, 0, 0);
@@ -37,9 +43,9 @@ class ThreeScene {
     this.containerElement.appendChild(this.renderer.domElement);
 
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
-    this.controls.maxPolarAngle = Math.PI * 0.5;
+    // this.controls.maxPolarAngle = Math.PI * 0.5;
     this.controls.minDistance = 0;
-    this.controls.maxDistance = 100;
+    this.controls.maxDistance = 1000;
 
     this.stats = new Stats();
     this.containerElement.appendChild(this.stats.dom);
@@ -65,6 +71,19 @@ class ThreeScene {
     this.boxGroup = new THREE.Group();
     this.boxGroup.add(line, boxMesh);
     this.scene.add(this.boxGroup);
+    const materialArray = [];
+
+    const imgs = [ft, bk, up, dn, rt, lf];
+    imgs.forEach((img) => {
+      const texture = new THREE.TextureLoader().load(img);
+      const material = new THREE.MeshBasicMaterial({ map: texture });
+      material.side = THREE.BackSide;
+      materialArray.push(material);
+    });
+
+    const skyboxGeo = new THREE.BoxGeometry(10000, 10000, 10000);
+    const skybox = new THREE.Mesh(skyboxGeo, materialArray);
+    this.scene.add(skybox);
   }
 
   initHelpers() {
