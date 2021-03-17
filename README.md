@@ -1,4 +1,5 @@
 # TODO
-- Day/night sun/moon movement
-- Hemisphere color change mimic rayleigh scattering
+- Moon
+- Hemisphere light color based on sun pos
+- Dir light goes through the floor
 - Controls for "time"
