@@ -18,7 +18,7 @@ class CharacterController {
 
       const s = 0.35;
       mesh.scale.set(s, s, s);
-      mesh.position.y = 15;
+      mesh.position.y = 50;
       mesh.rotation.y = -1;
 
       mesh.castShadow = true;
